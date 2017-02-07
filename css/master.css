@@ -87,8 +87,45 @@ ul.list-social li.social-linkedin a {
   animation-delay: 2s;
 }
 
+#mainNav {
+  animation-delay: 1s;
+}
+
 .banner-logo {
   animation-duration: 2s;
+}
+
+.typebox {
+  height: 70px;
+}
+
+.typedout {
+  margin: 0;
+}
+
+.blue {
+  color: #333;
+  animation: color-me-in 1.5s;
+  animation-timing-function: linear;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation: color-me-in 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: .3s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    color: #333;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    color: #112753;
+  }
 }
 
 

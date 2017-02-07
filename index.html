@@ -10,7 +10,7 @@
   <meta name="author" content="">
 
   <title>byutechclub</title>
-  <link rel="stylesheet" href="img/favicon.png">
+  <link rel="icon" href="img/favicon.png">
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/animsition.min.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
   <!-- Theme CSS -->
   <link href="css/new-age.min.css" rel="stylesheet">
@@ -45,7 +46,7 @@
 
 <body id="page-top">
   <div class="animsition">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top wow fadeInDown" data-wow-delay=".5s">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top animated fadeInDown">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -63,7 +64,9 @@
               <a class="page-scroll" href="#download">About</a>
             </li>
             <li>
-              <a class="page-scroll" href="#features">Contact</a>
+              <!-- <a class="page-scroll" href="#features">Contact</a> -->
+              <a class="page-scroll" data-toggle="modal" data-target="#contactModal" href="">Contact</a>
+
             </li>
           </ul>
         </div>
@@ -89,133 +92,164 @@
       <div class="overlay"></div>
 
     </header>
-
-    <section id="download" class="download text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h2 class="section-heading">Check out what makes us great</h2>
-            <p>
-              <p>Minim ullamco mollit incididunt laboris et eiusmod laborum dolor aute Lorem duis laboris dolor pariatur magna duis. Irure incididunt esse qui aliquip esse ullamco quis labore enim adipisicing in ea do. Id proident et sint nisi velit qui
-                laboris laboris aliquip enim Lorem veniam officia voluptate sit eiusmod non. Ipsum sit do excepteur culpa sit voluptate commodo culpa. Officia quis eu mollit consequat ut dolore cillum ex aliquip ut eu ipsum. Nulla aute deserunt sit enim
-                adipisicing quis ullamco dolor ullamco ex eiusmod cupidatat velit sint cillum. Ut occaecat anim ipsum est laboris ex pariatur irure labore duis cillum adipisicing in id. Nisi voluptate veniam do excepteur irure in consequat exercitation
-                ex id consectetur irure amet reprehenderit consequat sit id.</p>
-            </p>
-          </div>
+  </div>
+  <section id="download" class="download text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="section-heading">Check out what makes us great</h2>
+          <p>
+            <p>Minim ullamco mollit incididunt laboris et eiusmod laborum dolor aute Lorem duis laboris dolor pariatur magna duis. Irure incididunt esse qui aliquip esse ullamco quis labore enim adipisicing in ea do. Id proident et sint nisi velit qui laboris
+              laboris aliquip enim Lorem veniam officia voluptate sit eiusmod non. Ipsum sit do excepteur culpa sit voluptate commodo culpa. Officia quis eu mollit consequat ut dolore cillum ex aliquip ut eu ipsum. Nulla aute deserunt sit enim adipisicing
+              quis ullamco dolor ullamco ex eiusmod cupidatat velit sint cillum. Ut occaecat anim ipsum est laboris ex pariatur irure labore duis cillum adipisicing in id. Nisi voluptate veniam do excepteur irure in consequat exercitation ex id consectetur
+              irure amet reprehenderit consequat sit id.</p>
+          </p>
         </div>
       </div>
-    </section>
-
-    <section id="features" class="features">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="section-heading">
-              <h2 class="typedout">WE BLEED <span style='color: darkblue'>BLUE</span></h2>
-              <p class="text-muted">Amet aliquip adipisicing exercitation Lorem enim aliqua aliqua veniam cillum in esse ipsum qui pariatur aute duis nisi.</p>
-              <hr>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="feature-item wow fadeInUp">
-                    <i class="icon-pencil text-primary"></i>
-                    <h3>Passionate Workers</h3>
-                    <p class="text-muted">Mollit enim minim id tempor qui sint in dolore ut incididunt laborum fugiat.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="feature-item wow fadeInUp" data-wow-delay=".1s">
-                    <i class="icon-bubbles text-primary"></i>
-                    <h3>Social Giants</h3>
-                    <p class="text-muted">Do ut incididunt non minim incididunt tempor anim veniam do anim labore et et.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="feature-item wow fadeInUp" data-wow-delay=".2s">
-                    <i class="icon-cup text-primary"></i>
-                    <h3>Glorified Insomniacs</h3>
-                    <p class="text-muted">Ullamco ullamco ea ad aute eu aute tempor dolore in sit amet consequat.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="feature-item wow fadeInUp" data-wow-delay=".3s">
-                    <i class="icon-loop text-primary"></i>
-                    <h3>Unstoppably Comitted</h3>
-                    <p class="text-muted">Et commodo mollit sunt fugiat laborum incididunt adipisicing.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-      <div class="container">
-        <ul class="list-inline list-social">
-          <li class="social-twitter hoverable-social">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li class="social-facebook hoverable-social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li class="social-google-plus hoverable-social">
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-          </li>
-          <li class="social-linkedin hoverable-social">
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <p>&copy; BYUTechClub 2017</p>
-        <ul class="list-inline">
-          <li>
-            <a href="#">Privacy</a>
-          </li>
-          <li>
-            <a href="#">Terms</a>
-          </li>
-          <li>
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
     </div>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Animsition -->
-    <script src="js/animsition.min.js"></script>
-    <!-- Typed -->
-    <script src="js/typed.min.js"></script>
+  </section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <section id="features" class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <div class="typebox">
+              <h2 class="typedout">WE BLEED <span style='color: darkblue'>BLUE</span></h2>
+            </div>
+            <p class="text-muted">Amet aliquip adipisicing exercitation Lorem enim aliqua aliqua veniam cillum in esse ipsum qui pariatur aute duis nisi.</p>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="feature-item wow fadeInUp">
+                  <i class="icon-pencil text-primary"></i>
+                  <h3>Passionate Workers</h3>
+                  <p class="text-muted">Mollit enim minim id tempor qui sint in dolore ut incididunt laborum fugiat.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-item wow fadeInUp" data-wow-delay=".1s">
+                  <i class="icon-bubbles text-primary"></i>
+                  <h3>Social Giants</h3>
+                  <p class="text-muted">Do ut incididunt non minim incididunt tempor anim veniam do anim labore et et.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="feature-item wow fadeInUp" data-wow-delay=".2s">
+                  <i class="icon-cup text-primary"></i>
+                  <h3>Glorified Insomniacs</h3>
+                  <p class="text-muted">Ullamco ullamco ea ad aute eu aute tempor dolore in sit amet consequat.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-item wow fadeInUp" data-wow-delay=".3s">
+                  <i class="icon-loop text-primary"></i>
+                  <h3>Unstoppably Comitted</h3>
+                  <p class="text-muted">Et commodo mollit sunt fugiat laborum incididunt adipisicing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <ul class="list-inline list-social">
+        <li class="social-twitter hoverable-social">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="social-facebook hoverable-social">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="social-google-plus hoverable-social">
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </li>
+        <li class="social-linkedin hoverable-social">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; BYUTechClub 2017</p>
+      <ul class="list-inline">
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
+  <!-- Modals -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+  <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Say <i class="em em-wave"></i></h3>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal col-sm-12">
+            <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+            <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+            <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+            <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success pull-right">Send It!</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Master -->
-    <script src="js/master.js"></script>
+  </div>
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Animsition -->
+  <script src="js/animsition.min.js"></script>
+  <!-- Typed -->
+  <script src="js/typed.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/new-age.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- Master -->
+  <script src="js/master.js"></script>
 
 </body>
 
