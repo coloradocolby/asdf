@@ -1,37 +1,59 @@
 html, body, h1, h2, h3, h4, h5, h6, p, li, a {
   font-family: 'Lato', sans-serif !important;
 }
+
 .navbar-default .navbar-header .navbar-brand {
   font-family: 'Lato', sans-serif !important;
 }
+
 .btn {
   font-family: 'Lato', sans-serif !important;
 }
+
 header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    overflow-y: hidden;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-position: center;
-    background-image: url('../img/bg-cta.jpg');
-    color: #fff;
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  overflow-y: hidden;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/bg-cta.jpg');
+  color: #fff;
 }
+
 .hoverable {
-    transition: box-shadow .25s;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1),0 3px 10px 0 rgba(0,0,0,0.1);
+  transition: box-shadow .25s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
+
 .hoverable:hover {
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-section.contact{
+
+.hoverable-social {
+  border-radius: 100%;
+  transition: box-shadow .25s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hoverable-social:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.contact {
   color: white;
-    background-color: #222222 !important;
+  background-color: #4c5980 !important;
+  padding: 30px 0 0;
 }
+
+footer {
+  background-color: #4c5980;
+}
+
 section.contact ul.list-social li a {
   display: block;
   height: 40px;
@@ -41,14 +63,44 @@ section.contact ul.list-social li a {
   border-radius: 100%;
   color: white;
 }
-.rotate-on-hover{
--webkit-transition: -webkit-transform .5s ease-in-out;
-        transition:         transform .5s ease-in-out;
+
+section.features .feature-item i {
+  font-size: 80px;
+  background: -webkit-linear-gradient(to left, #112753, #1e7792);
+  background: linear-gradient(to left, #112753, #1e7792);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+ul.list-social li.social-linkedin a {
+  background-color: #007BB6;
+}
+
+.list-inline>li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.banner-cta {
+  animation-delay: 1.5s;
+}
+
+.banner-logo {
+  animation-duration: 2s;
+}
+
+
+/*ADD POSSIBILITIES*/
+
+
+/*.rotate-on-hover {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+
 .rotate-on-hover:hover {
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-section.contact {
-    padding: 50px 0;
-}
+  transform: rotate(360deg);
+}*/

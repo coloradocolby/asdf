@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   <!-- Theme CSS -->
   <link href="css/new-age.min.css" rel="stylesheet">
@@ -43,12 +44,12 @@
 
 <body id="page-top">
 
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top wow fadeInDown">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                 </button>
         <a class="navbar-brand page-scroll" href="#page-top">&lt;byutechclub/&gt;
         </a>
@@ -76,9 +77,9 @@
         <div class="col-sm-12">
           <div class="header-content">
             <div class="header-content-inner">
-              <img src="img/header-logo.png" class="img-responsive" alt="">
+              <img src="img/header-logo.png" class="banner-logo img-responsive animated fadeIn" alt="">
 
-              <a href="#download" class="btn btn-outline btn-xl page-scroll">'Y' not learn more?</a>
+              <a href="#download" class="banner-cta btn btn-outline btn-xl page-scroll animated fadeInDown">'Y' not learn more?</a>
             </div>
           </div>
         </div>
@@ -109,8 +110,8 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h2>Unlimited Features, Unlimited Fun</h2>
-            <p class="text-muted">Check out what you can do with this app theme!</p>
+            <h2>WE BLEED <span style='color: darkblue'>BLUE</span></h2>
+            <p class="text-muted">Amet aliquip adipisicing exercitation Lorem enim aliqua aliqua veniam cillum in esse ipsum qui pariatur aute duis nisi.</p>
             <hr>
           </div>
         </div>
@@ -120,33 +121,33 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6">
-                <div class="feature-item">
-                  <i class="icon-screen-smartphone text-primary"></i>
-                  <h3>Device Mockups</h3>
-                  <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                <div class="feature-item wow fadeInUp">
+                  <i class="icon-pencil text-primary"></i>
+                  <h3>Passionate Workers</h3>
+                  <p class="text-muted">Mollit enim minim id tempor qui sint in dolore ut incididunt laborum fugiat.</p>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="feature-item">
-                  <i class="icon-camera text-primary"></i>
-                  <h3>Flexible Use</h3>
-                  <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                <div class="feature-item wow fadeInUp" data-wow-delay=".1s">
+                  <i class="icon-bubbles text-primary"></i>
+                  <h3>Social Giants</h3>
+                  <p class="text-muted">Do ut incididunt non minim incididunt tempor anim veniam do anim labore et et.</p>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
-                <div class="feature-item">
-                  <i class="icon-present text-primary"></i>
-                  <h3>Free to Use</h3>
-                  <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                <div class="feature-item wow fadeInUp" data-wow-delay=".2s">
+                  <i class="icon-cup text-primary"></i>
+                  <h3>Glorified Insomniacs</h3>
+                  <p class="text-muted">Ullamco ullamco ea ad aute eu aute tempor dolore in sit amet consequat.</p>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="feature-item">
-                  <i class="icon-lock-open text-primary"></i>
-                  <h3>Open Source</h3>
-                  <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                <div class="feature-item wow fadeInUp" data-wow-delay=".3s">
+                  <i class="icon-loop text-primary"></i>
+                  <h3>Unstoppably Comitted</h3>
+                  <p class="text-muted">Et commodo mollit sunt fugiat laborum incididunt adipisicing.</p>
                 </div>
               </div>
             </div>
@@ -156,16 +157,18 @@
   </section>
   <section id="contact" class="contact">
     <div class="container">
-      <h2>Follow Us:</h2>
       <ul class="list-inline list-social">
-        <li class="social-twitter rotate-on-hover">
+        <li class="social-twitter hoverable-social">
           <a href="#"><i class="fa fa-twitter"></i></a>
         </li>
-        <li class="social-facebook rotate-on-hover">
+        <li class="social-facebook hoverable-social">
           <a href="#"><i class="fa fa-facebook"></i></a>
         </li>
-        <li class="social-google-plus rotate-on-hover">
+        <li class="social-google-plus hoverable-social">
           <a href="#"><i class="fa fa-google-plus"></i></a>
+        </li>
+        <li class="social-linkedin hoverable-social">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
         </li>
       </ul>
     </div>
@@ -190,6 +193,13 @@
   <!-- jQuery -->
   <script src="vendor/jquery/jquery.min.js"></script>
 
+  <!-- Typed -->
+  <script src="js/typed.min.js"></script>
+
+  ...
+
+  <div class="element"></div>
+
   <!-- Bootstrap Core JavaScript -->
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -198,6 +208,14 @@
 
   <!-- Theme JavaScript -->
   <script src="js/new-age.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- Master -->
+  <script src="js/master.js"></script>
 
 </body>
 
