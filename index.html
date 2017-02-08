@@ -47,7 +47,7 @@
 <body id="page-top">
   <div class="animsition">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top animated fadeInDown">
-      <div class="container">
+      <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -97,7 +97,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h2 class="section-heading">Check out what makes us great</h2>
+          <div class="typebox">
+            <h2 class="section-heading typedout"></h2>
+          </div>
           <p>
             <p>Minim ullamco mollit incididunt laboris et eiusmod laborum dolor aute Lorem duis laboris dolor pariatur magna duis. Irure incididunt esse qui aliquip esse ullamco quis labore enim adipisicing in ea do. Id proident et sint nisi velit qui laboris
               laboris aliquip enim Lorem veniam officia voluptate sit eiusmod non. Ipsum sit do excepteur culpa sit voluptate commodo culpa. Officia quis eu mollit consequat ut dolore cillum ex aliquip ut eu ipsum. Nulla aute deserunt sit enim adipisicing
@@ -109,78 +111,99 @@
     </div>
   </section>
 
+  <section class="cta">
+    <div class="cta-content">
+      <div class="container">
+        <h2><span class="wow fadeIn" data-wow-delay=".5s">Stop waiting.</span><br><span class="wow fadeIn" data-wow-delay="1s">Start connecting</span></h2>
+        <a href="#contact" class="btn btn-outline btn-xl page-scroll wow fadeInUp" data-wow-delay="1.5s">Join our Newsletter</a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
   <section id="features" class="features">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <div class="typebox">
-              <h2 class="typedout">WE BLEED <span style='color: darkblue'>BLUE</span></h2>
-            </div>
+            <h2>Check out what makes us great</h2>
             <p class="text-muted">Amet aliquip adipisicing exercitation Lorem enim aliqua aliqua veniam cillum in esse ipsum qui pariatur aute duis nisi.</p>
             <hr>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="container-fluid">
+        <div class="col-xs-12">
+          <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4 col-sm-6">
                 <div class="feature-item wow fadeInUp">
                   <i class="icon-pencil text-primary"></i>
                   <h3>Passionate Workers</h3>
                   <p class="text-muted">Mollit enim minim id tempor qui sint in dolore ut incididunt laborum fugiat.</p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4 col-sm-6">
                 <div class="feature-item wow fadeInUp" data-wow-delay=".1s">
                   <i class="icon-bubbles text-primary"></i>
                   <h3>Social Giants</h3>
                   <p class="text-muted">Do ut incididunt non minim incididunt tempor anim veniam do anim labore et et.</p>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4 col-sm-6">
                 <div class="feature-item wow fadeInUp" data-wow-delay=".2s">
-                  <i class="icon-cup text-primary"></i>
-                  <h3>Glorified Insomniacs</h3>
-                  <p class="text-muted">Ullamco ullamco ea ad aute eu aute tempor dolore in sit amet consequat.</p>
+                  <i class="icon-organization text-primary"></i>
+                  <h3>Team Driven</h3>
+                  <p class="text-muted">Mollit enim minim id tempor qui sint in dolore ut incididunt laborum fugiat.</p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="feature-item wow fadeInUp" data-wow-delay=".3s">
-                  <i class="icon-loop text-primary"></i>
-                  <h3>Unstoppably Comitted</h3>
-                  <p class="text-muted">Et commodo mollit sunt fugiat laborum incididunt adipisicing.</p>
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="feature-item wow fadeInUp" data-wow-delay=".3s">
+                    <i class="icon-cup text-primary"></i>
+                    <h3>Glorified Insomniacs</h3>
+                    <p class="text-muted">Ullamco ullamco ea ad aute eu aute tempor dolore in sit amet consequat.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="feature-item wow fadeInUp" data-wow-delay=".4s">
+                    <i class="icon-speedometer text-primary"></i>
+                    <h3>Time Utilizers</h3>
+                    <p class="text-muted">Et commodo mollit sunt fugiat laborum incididunt adipisicing.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                    <i class="icon-loop text-primary"></i>
+                    <h3>Unstoppably Comitted</h3>
+                    <p class="text-muted">Et commodo mollit sunt fugiat laborum incididunt adipisicing.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
   </section>
   <section id="contact" class="contact">
     <div class="container">
       <ul class="list-inline list-social">
-        <li class="social-twitter hoverable-social">
+        <li class="social-twitter hoverable-social wow fadeInUp" data-wow-delay=".05s">
           <a href="#"><i class="fa fa-twitter"></i></a>
         </li>
-        <li class="social-facebook hoverable-social">
+        <li class="social-facebook hoverable-social wow fadeInUp" data-wow-delay=".1s">
           <a href="#"><i class="fa fa-facebook"></i></a>
         </li>
-        <li class="social-google-plus hoverable-social">
+        <li class="social-google-plus hoverable-social wow fadeInUp" data-wow-delay=".15s">
           <a href="#"><i class="fa fa-google-plus"></i></a>
         </li>
-        <li class="social-linkedin hoverable-social">
+        <li class="social-linkedin hoverable-social wow fadeInUp" data-wow-delay=".2s">
           <a href="#"><i class="fa fa-linkedin"></i></a>
         </li>
       </ul>
     </div>
   </section>
   <footer>
-    <div class="container">
+    <div class="container wow fadeIn" data-wow-delay=".5s">
       <p>&copy; BYUTechClub 2017</p>
       <ul class="list-inline">
         <li>

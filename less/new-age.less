@@ -133,14 +133,17 @@ p {
 // Homepage Header
 
 header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    overflow-y: hidden;
-    background: url("../img/bg-pattern.png"), @theme-secondary; /* fallback for old browsers */
-    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  overflow-y: hidden;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/bg-cta.jpg');
     .header-content {
         text-align: center;
         padding: 150px 0 50px;
@@ -149,6 +152,9 @@ header {
             position: relative;
             max-width: 500px;
             margin: 0 auto;
+            .banner-cta {
+              animation-delay: 2s;
+            }
             h1 {
                 margin-top: 0;
                 margin-bottom: 30px;
@@ -267,11 +273,11 @@ section.features {
             font-size: 30px;
         }
         i {
-            font-size: 80px;
-              background: -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary);
-              background: linear-gradient(to left, @theme-secondary , @theme-tertiary);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+          font-size: 80px;
+          background: -webkit-linear-gradient(to left, #112753, #1e7792);
+          background: linear-gradient(to left, #112753, #1e7792);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
     }
     @media(min-width: 992px) {
@@ -283,11 +289,15 @@ section.features {
 }
 
 section.cta {
-    position: relative;
-    .background-cover;
-    background-position: center;
-    background-image: url('../img/bg-cta.jpg');
-    padding: 250px 0;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/workstation2.jpg');
+  padding: 250px 0;
+
     .cta-content {
         position: relative;
         z-index: 1;
@@ -295,12 +305,12 @@ section.cta {
             margin-top: 0;
             margin-bottom: 25px;
             color: white;
-            max-width: 450px;
-            font-size: 50px;
+            max-width: 600px;
+            font-size: 40px;
         }
         @media (min-width: 768px) {
             h2 {
-                font-size: 80px;
+                font-size: 70px;
             }
         }
     }
@@ -315,6 +325,9 @@ section.cta {
 }
 
 section.contact {
+  color: white;
+  background-color: #4c5980 !important;
+  padding: 30px 0 0;
     text-align: center;
     h2 {
         margin-top: 0;
@@ -326,14 +339,18 @@ section.contact {
     ul.list-social {
         margin-bottom: 0;
         li {
+          display: inline-block;
+          margin-right: 5px;
+          margin-left: 5px;
+          padding: 0;
             a {
-                display: block;
-                height: 80px;
-                width: 80px;
-                line-height: 80px;
-                font-size: 40px;
-                border-radius: 100%;
-                color: white;
+              display: block;
+              height: 40px;
+              width: 40px;
+              line-height: 40px;
+              font-size: 20px;
+              border-radius: 100%;
+              color: white;
             }
             &.social-twitter {
                 a {
@@ -359,12 +376,21 @@ section.contact {
                     }
                 }
             }
+            &.social-linkedin {
+                a {
+                    background-color: @brand-linkedin;
+                    &:hover {
+                        background-color: darken(@brand-linkedin, 5%);
+                    }
+                }
+            }
         }
     }
 }
 
 footer {
-    background-color: @gray-darker;
+    // background-color: @gray-darker;
+    background-color: #4c5980;
     padding: 25px 0;
     color: fade(white, 30%);
     text-align: center;
@@ -457,4 +483,25 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+// Custom Styling
+
+.hoverable {
+  transition: box-shadow .25s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hoverable:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hoverable-social {
+  border-radius: 100%;
+  transition: box-shadow .25s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hoverable-social:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
